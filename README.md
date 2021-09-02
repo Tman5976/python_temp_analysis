@@ -15,14 +15,24 @@ It is reasonable to assume average temperatures will remain consistent because J
 
 - December has a similar difference in recorded temperatures. The recorded high was 83 degrees with a low of 71 degrees. December's degree difference is 22 degrees with a standard deviation of 3.75 degrees.
 
+![June Stats](https://user-images.githubusercontent.com/85756203/131893549-ac8448d9-b558-4ec4-94ef-b87815bd996b.png)
+-------------
+![Dec Stats](https://user-images.githubusercontent.com/85756203/131893564-0b83a233-1881-4336-bf43-d4bddeb7a5ea.png)
+
 ## Summary
 
 This data describes a consistent picture of the weather on Oahu. The difference in high to low temperatures from June and December is only one degree, and the standard deviation difference is 0.5 degrees. The surf shop our client is looking to open should not have any concerns about the temperature affecting people's ability to surf on Oahu.
 
-Finding two more queries to run on our weather data could be started by running the following code.
+Finding two more queries to run on our weather data could be started by running the following code:
+
+```
+first_row = session.query(Measurement).first()
+first_row.__dict__
+```
 
 This code will give us the following output.
 
+![2+ query](https://user-images.githubusercontent.com/85756203/131894882-8fc1f7fa-258c-465a-b289-54ee1656fb8a.png)
 
 The precipitation on Oahu during June and December would provide vital information about the viability of a surf shop. If there is too much rain on Oahu, people are most likely going to avoid surfing.
 
